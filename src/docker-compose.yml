@@ -5,6 +5,6 @@ services:
     build: GrpcTestServer
     restart: unless-stopped
     ports: 
-      - 5215:5215
+      - 8080:5215
   
   
