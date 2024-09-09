@@ -10,11 +10,11 @@ public class GreetService : Greeter.GreeterBase
         _logger = logger;
     }
 
-    public override async Task<HelloReply> SayHello(HelloRequest request, Grpc.Core.ServerCallContext context)
+    public override Task<HelloReply> SayHello(HelloRequest request, Grpc.Core.ServerCallContext context)
     {
-        return new HelloReply
+        return Task.FromResult(new HelloReply
         {
             Message = "Hello " + request.Name
-        };
+        });
     }
 }
