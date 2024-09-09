@@ -1,0 +1,8 @@
+services:
+  grpc-test:
+    build: GrpcTestServer
+    restart: unless-stopped
+    ports: 
+      - 5215:5215
+  
+  

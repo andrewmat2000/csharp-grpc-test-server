@@ -1,0 +1,16 @@
+{
+  "image": "mcr.microsoft.com/dotnet/sdk:8.0",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "dotnet.defaultSolution": "src/GrpcTestServer.sln"
+      },
+      "extensions": [
+        "patcx.vscode-nuget-gallery",
+        "ms-dotnettools.csdevkit",
+        "EditorConfig.EditorConfig",
+        "ms-vscode.vs-keybindings"
+      ]
+    }
+  }
+}
