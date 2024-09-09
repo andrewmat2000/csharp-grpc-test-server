@@ -1,4 +1,4 @@
-name: "GrpcTestServer"
+name: "grpc-test-server"
 
 services:
   grpc-test:
